@@ -29,21 +29,24 @@ public class Day3_assnmt1 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.easemytrip.com/");
 		
-		driver.findElement(By.id("oway")).click();
+		driver.findElement(By.id("oway")).click(); //one way
 	    WebElement state=driver.findElement(By.id("FromSector_show"));
 	    state.click();
         driver.findElement(By.id("spn2")).click();
         Thread.sleep(2000);
-        driver.findElement(By.id("ptt"));
+        
+        driver.findElement(By.id("ptt")); //To
         driver.findElement(By.id("a_Editbox13_show")).sendKeys("kolkata");
         driver.findElement(By.id("spnKolkata")).click();
         Thread.sleep(2000);
+        
         driver.findElement(By.id("ddate"));
-        driver.findElement(By.id("trd_6_19/09/2026")).click();
+        driver.findElement(By.id("trd_6_19/09/2026")).click(); //Data departure field, select future date
         Thread.sleep(2000);
+        
         driver.findElement(By.id("spnTraveller")).click();
-        driver.findElement(By.id("add")).click();
-        driver.findElement(By.cssSelector("[value='Search']")).click();
+        driver.findElement(By.id("add")).click(); //select 2 adults
+        driver.findElement(By.cssSelector("[value='Search']")).click(); //click search
        String result= driver.getTitle();
        if(result.contains("EaseMyTrip.com Lowest Airfare, Flight Tickets, Cheap Air Tickets – EaseMyTrip.com")) {
     	   System.out.println("flight result is displayrd");
@@ -51,7 +54,6 @@ public class Day3_assnmt1 {
        else
        {
     	   System.out.println("flight result is not displayed");
-       }
-		
+       }		
 	}
 }
