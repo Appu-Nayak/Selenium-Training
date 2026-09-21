@@ -50,7 +50,6 @@ public class BaseClass {
     public void tearDown() throws InterruptedException {
         loginPage.getLogOut();
         Thread.sleep(1000);
-        driver.quit();
         System.out.println("Logout Successfully");
     }
 
