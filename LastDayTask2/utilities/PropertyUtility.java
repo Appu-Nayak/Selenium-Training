@@ -10,6 +10,6 @@ public class PropertyUtility {
         Properties properties=new Properties();
         properties.load(file);
         String data=properties.getProperty(key);
-        return key;
+        return data;
     }
 }
