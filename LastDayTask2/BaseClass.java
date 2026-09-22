@@ -1,7 +1,7 @@
 package Assessments.LastDayTask2;
-import Assessments.Day12.pom.LoginPage;
-import Assessments.Day12.utilities.PropertyUtility;
 import Assessments.LastDayTask2.pom.BuzzPage;
+import Assessments.LastDayTask2.pom.LoginPage;
+import Assessments.LastDayTask2.utilities.PropertyUtility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
